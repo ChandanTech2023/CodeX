@@ -141,11 +141,11 @@ html {
     align-items: center;
   }
   .logo {
-    color: var(--smoky-black);
     font-size: var(--fs-1);
     font-weight: var(--fw-700);
     line-height: 1;
-    margin: 0 40px ;
+    /* margin: 0 40px ; */
+    padding: 0 44px;
   }
 
   .navbar {
@@ -304,4 +304,44 @@ button {
     font-size: var(--fs-5);
     font-weight: var(--fw-500);
   }
- 
+  
+  /*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service { background-color: var(--white-1); }
+
+.service :is(.section-title, .section-text) { text-align: center; }
+
+.service .section-text { margin-block: 10px 35px; }
+
+.service-list {
+  display: grid;
+  gap: 25px;
+}
+
+.service-card {
+  border-radius: var(--radius-6);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+
+.service-card .card-banner {
+  background-color: var(--light-gray);
+  aspect-ratio: 1 / 0.47;
+}
+
+.service-card .card-content { padding: 20px; }
+
+.service-card .card-title { transition: var(--transition-1); }
+
+.service-card .card-title:is(:hover, :focus) { color: var(--winter-sky); }
+
+.service-card .card-text {
+  margin-block: 10px 20px;
+  line-height: 1.8;
+}
+
+.service-card .btn-link { color: var(--ultramarine); }
+
+
